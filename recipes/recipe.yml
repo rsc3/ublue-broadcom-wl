@@ -14,11 +14,10 @@ modules:
       - source: system
         destination: / 
 
-  # Installs the Broadcom drivers from RPM Fusion
-  - type: rpm-ostree
+  # Properly installs the Broadcom kernel modules
+  - type: akmods
     install:
-      - broadcom-wl
-      - akmod-wl
+      - wl
 
   # Sets up the proper policy & signing files for signed images to work securely
   - type: signing
