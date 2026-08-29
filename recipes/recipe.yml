@@ -18,6 +18,3 @@ modules:
   - type: akmods
     install:
       - wl
-
-  # Sets up the proper policy & signing files for signed images to work securely
-  - type: signing
