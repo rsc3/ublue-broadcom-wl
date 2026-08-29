@@ -14,7 +14,7 @@ modules:
       - source: system
         destination: / 
 
-  # Installs the Broadcom drivers from RPM Fusion (already enabled in Bazzite)
+  # Installs the Broadcom drivers from RPM Fusion
   - type: rpm-ostree
     install:
       - broadcom-wl
